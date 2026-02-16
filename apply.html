@@ -11,11 +11,11 @@ x <html>
 
 <body style="background: #0b0f14; color: white; font-family: 'Inter', sans-serif; margin: 0;">
    <nav>
-  <a href="student-dashboard.html" class="nav-logo">PathFinder</a>
+  <a href="studentdashboard.html" class="nav-logo">PathFinder</a>
   
   <div class="nav-links">
-    <a href="student dashboard.html" class="nav-item">Browse</a>
-    <a href="my application.html" class="nav-item">My Applications</a>
+    <a href="studentdashboard.html" class="nav-item">Browse</a>
+    <a href="myapplication.html" class="nav-item">My Applications</a>
     <a href="messages.html" class="nav-item">Messages</a>
   </div>
 
@@ -125,7 +125,7 @@ x <html>
 
     
     <div style="flex: 1; background: #111827; padding: 30px; border-radius: 16px; border: 1px solid #1f2937; height: fit-content;">
-      <a href="student dashboard.html" style="color: #9ca3af; text-decoration: none; font-size: 14px;">← Back to Opportunities</a>
+      <a href="studentdashboard.html" style="color: #9ca3af; text-decoration: none; font-size: 14px;">← Back to Opportunities</a>
       
       <div style="margin-top: 20px;">
         <span id="oppTags" style="display: flex; gap: 8px; margin-bottom: 15px;"></span>
@@ -282,7 +282,7 @@ function logout() {
         appliedAt: firebase.firestore.FieldValue.serverTimestamp()
     }).then(() => {
         alert("Application Submitted!");
-        window.location.href = "student dashboard.html";
+        window.location.href = "studentdashboard.html";
     }).catch((error) => {
         console.error("Error submitting application: ", error);
         alert("Submission failed: " + error.message);
@@ -290,4 +290,5 @@ function logout() {
 }
 </script>
 </body>
+
 </html>
